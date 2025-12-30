@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>OB Montessori Center</title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand" target="_self">
+                <img class="img-responsive" src="obmc.png" style="max-width: 100px; width: 35px;"> OB Montessori
+                Center
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">Homepage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grades.html" target="_self">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clubs.html" target="_self">School Clubs</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-center navbar-expand-lg ms-auto">
+                    <div class="navbar-search">
+                        <input type="search" placeholder="Search for..." name="search">
+                        <button>Input</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SCHOOL HEADING -->
+    <div class="container-fluid heading col-12 mb-6">
+        <br>
+        <h2 id="school_welcome"></h2>
+        <p id="school_overview"></p>
+        <br>
+    </div>
+    <br>
+
+    <!-- ABOUT THE SCHOOL HEADING -->
+    <div class="container col-12 mt-3">
+        <h2 id="school_about"></h2>
+        <hr class="thick mt-3">
+    </div>
+
+    <!-- SCHOOL INFOMRATION HEADING -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+
+            <!-- DESCRIPTION -->
+            <div class="col-6">
+                <h1 id="school_name"></h1>
+                <h3 id="school_department"></h3>
+                <i id="school_quote"></i><br>
+                <p id="school_values"></p>
+                <p id="school_description"></p>
+                <a class="btn" href="https://obmontessori.edu.ph/" target="_blank">Learn More</a>
+            </div>
+
+            <!-- CAROUSEL -->
+            <div id="demo" class="col-6 carousel slide" data-bs-ride="carousel">
+
+                <!-- INDICATORS -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- SLIDESHOW -->
+                <div class="carousel-inner col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+                    <div class="carousel-item active">
+                        <img src="JHS1.webp" alt="Photo 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="JHS2.jpg" alt="Photo 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="JHS3.webp" alt="Photo 3" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="JHS4.jpg" alt="Photo 4" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="JHS5.jpg" alt="Photo 5" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- LEFT AND RIGHT CONTROLS -->
+                <div class="container">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <br>
+        <p>Project by Alexandrea Alquizola, Grade 10 - Ruby</p>
+        <p>All Rights Reserved, December 2025.</p>
+    </div>
+
+    <!-- PYTHON SCRIPT -->
+    <script type="py" src="index.py"></script>
+</body>
+
+</html>
