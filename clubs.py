@@ -2,7 +2,7 @@ from pyscript import document, display
 
 # TUPLES FOR HEADINGS
 headings = (
-    "School Information",
+    "School Club Information",
     "Select a OBMC Junior High School Club:"
 )
 
